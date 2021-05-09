@@ -78,13 +78,12 @@ Scan the QR code using your WhatsApp in your phone!
 | ON |✅|
 | STATUS |✅|
 
-| STICKER |✅|
+| MAKER |✅|
 | ------------- | ------------- |
 | STICKER |✅|
 | STICKER GIF |✅|
 | STICKER WM |✅|
 | TAKE STICKER |✅|
-| SEMONI |✅|
 | FDEFACE |✅|
 
 | CONVERT |✅|
@@ -96,7 +95,6 @@ Scan the QR code using your WhatsApp in your phone!
 | FAST |✅|
 | REVERSE |✅|
 | TOURL |✅|
-| IMGTOURL |✅|
 
 | UP STORY |✅|
 | ------------- | ------------- |
@@ -109,9 +107,6 @@ Scan the QR code using your WhatsApp in your phone!
 | FITNAH |✅|
 | FITNAH PC |✅|
 | KONTAK |✅|
-| SUIT |✅|
-| SANTET |✅|
-| KUTUK |✅|
 
 
 | TAG |✅|
@@ -129,7 +124,6 @@ Scan the QR code using your WhatsApp in your phone!
 | VIDEO |✅|
 | YTMP3 |✅|
 | YTMP4 |✅|
-| MEDIAFIRE |✅|
 | IGDL |✅|
 | FBDL |✅|
 | TIKTOKDL |✅|
@@ -138,16 +132,6 @@ Scan the QR code using your WhatsApp in your phone!
 | BRAINLY |✅|
 | IMAGE |✅|
 | ANIME |✅|
-
-| MAKER |✅|
-| ------------- | ------------- |
-| NULIS |✅|
-| TAHTA |✅|
-| CARBON |✅|
-| KANNAGEN |✅|
-| TRUMPTWEET |✅|
-| MEMEGEN |✅|
-| QUOTEMAKER |✅|
 
 | OTHER |✅|
 | ------------- | ------------- |
