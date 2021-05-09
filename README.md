@@ -68,8 +68,6 @@ Edit file yg berada di 'index.js'
 * [Libwebp](https://developers.google.com/speed/webp/download)
 ```
 
-Scan the QR code using your WhatsApp in your phone!
-
 # PIMTUR
 
 | OWNER |✅|
