@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.ibb.co/hBQ32Hx/3a7fcd4aae0a.jpg" alt="NINO-BAILEYS" width="300" />
+<img src="https://i.ibb.co/BZ9hN4V/135ef8a58e76.jpg" alt="SELF-BOT" width="300" />
 
 # SELFBOT 
 
@@ -67,83 +67,6 @@ Edit file yg berada di 'index.js'
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
 * [Libwebp](https://developers.google.com/speed/webp/download)
 ```
-
-# PIMTUR
-
-| OWNER |✅|
-| ------------- | ------------- |
-| OFF |✅|
-| ON |✅|
-| STATUS |✅|
-
-| MAKER |✅|
-| ------------- | ------------- |
-| STICKER |✅|
-| STICKER GIF |✅|
-| STICKER WM |✅|
-| TAKE STICKER |✅|
-| FDEFACE |✅|
-
-| CONVERT |✅|
-| ------------- | ------------- |
-| TOIMG |✅|
-| TOMP3 |✅|
-| TOMP4 |✅|
-| SLOW |✅|
-| FAST |✅|
-| REVERSE |✅|
-| TOURL |✅|
-
-| UP STORY |✅|
-| ------------- | ------------- |
-| UPSWTEXT |✅|
-| UPSWIMAGE |✅|
-| UPSWVIDEO  |✅|
-
-| FUN |✅|
-| ------------- | ------------- |
-| FITNAH |✅|
-| FITNAH PC |✅|
-| KONTAK |✅|
-
-
-| TAG |✅|
-| ------------- | ------------- |
-| STICKTAG |✅|
-| HIDETAG |✅|
-| KONTAG |✅|
-| TOTAG |✅|
-
-| DOWNLOAD |✅|
-| ------------- | ------------- |
-| YTSEARCH |✅|
-| IGSTALK |✅|
-| PLAY |✅|
-| VIDEO |✅|
-| YTMP3 |✅|
-| YTMP4 |✅|
-| IGDL |✅|
-| FBDL |✅|
-| TIKTOKDL |✅|
-| TIKTOK AUDIO |✅|
-| TWITTER |✅|
-| BRAINLY |✅|
-| IMAGE |✅|
-| ANIME |✅|
-
-| OTHER |✅|
-| ------------- | ------------- |
-| SELF |✅|
-| PUBLIC |✅|
-| SET THUMB |✅|
-| SET FAKE IMG |✅|
-| SET TARGET |✅|
-| SET REPLY |✅|
-| PING |✅|
-| JOIN |✅|
-| GET |✅|
-| TERM |✅|
-| X |✅|
 
   # MAKASIH LORT
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
