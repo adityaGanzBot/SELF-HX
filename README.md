@@ -49,15 +49,15 @@ Edit file yg berada di 'index.js'
   	"owner": "6288286421519",
 	"prefix": "Multi Prefix",
 	"uaOverride": "WhatsApp/2.2037.6 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
-	"leys": "APIKEY",
-	"lol": "APIKEY",
+	"ApiKey": "LEYSKEY",
+	"lolkey": "LOLKEY",
 }
 ```
 
 `owner`: nomor WhatsApp anda.  
 `prefix`: prefix bot.  
 `uaOverride`: your user agent.  
-`Leys`: Leyscoders API. (https://mhankbarbar.moe/)  
+`Leys`: Leyscoders API. (https://leyscoders-api.herokuapp.com/)  
 `lol`: lolhuman API. (https://lolhuman.herokuapp.com/)  
 
 
@@ -70,7 +70,7 @@ Edit file yg berada di 'index.js'
 
   # MAKASIH LORT
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`MhankBarBar`](https://github.com/MhankBarBar)
+* [`Mhankbarbar`](https://github.com/MhankBarBar)
 * [`HEXAGON`](https://github.com/Hexagonz)
 * [`MRHRTZ`](https://github.com/MRHRTZ)
 * [`ARIP`](https://github.com/Akkun3704)
