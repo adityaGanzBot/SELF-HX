@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://i.ibb.co/hBQ32Hx/3a7fcd4aae0a.jpg" alt="NINO-BAILEYS" width="300" />
 
-# BOT WHATSAPP BAILEYS
+# SELFBOT 
 
 >
 >
@@ -11,13 +11,13 @@
   <a href="https://github.com/MhankBarBar"><img title="Author" src="https://img.shields.io/badge/Author-Mhankbarbar-red.svg?style=for-the-badge&logo=github" /></a>
 </p>
 <p align="center">
-  <a href="https://github.com/Nino-chan02/Nino-Baileys"><img title="Stars" src="https://img.shields.io/github.com/Nino-chan02?tab=stars?color=red&style=flat-square" /></a>
+  <a href="https://github.com/Nino-chan02/SELF-HX"><img title="Stars" src="https://img.shields.io/github.com/Nino-chan02?tab=stars?color=red&style=flat-square" /></a>
   <img src="https://img.shields.io/badge/maintained%3F-yes-green.svg?style=flat" />
 </p>
 <p align="center">
-  <a href="https://github.com/Nino-chan02/Nino-Baileys#REQUIREMENTS">Requirements</a> •
-  <a href="https://github.com/Nino-chan02/Nino-Baileys#INSTALLATION">Installation</a> •
-  <a href="https://github.com/Nino-chan02/Nino-Baileys#thanks-to">Thanks to</a>
+  <a href="https://github.com/Nino-chan02/SELF-HX#REQUIREMENTS">Requirements</a> •
+  <a href="https://github.com/Nino-chan02/SELF-HX#INSTALLATION">Installation</a> •
+  <a href="https://github.com/Nino-chan02/SELF-HX#thanks-to">Thanks to</a>
 </p>
 </div>
 
@@ -35,220 +35,137 @@
 
 # INSTALLATION
 ```bash
-> git clone https://github.com/Nino-chan02/Nino-Baileys
-> cd Nino-Baileys
-> npm install
+> pkg install nodejs && pkg install git
+> git clone https://github.com/Hexagonz/SELF-HX
+> cd SELF-HX
+> bash install.sh
+> npm start/node main.js
 ```
 
 ## EDIT FILES
 Edit file yg berada di 'index.js'
 ```json
 {
-  	"owner": "6288286421519@c.us",
-	"prefix": "z",
+  	"owner": "6288286421519",
+	"prefix": "Multi Prefix",
 	"uaOverride": "WhatsApp/2.2037.6 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
 	"leys": "APIKEY",
-	"vhtear": "APIKEY",
 	"lol": "APIKEY",
-  	"Barbar": "APIKEY"
 }
 ```
-
 
 `owner`: nomor WhatsApp anda.  
 `prefix`: prefix bot.  
 `uaOverride`: your user agent.  
-`Barbar`: Mhankbarbar API. (https://mhankbarbar.moe/)  
+`Leys`: Leyscoders API. (https://mhankbarbar.moe/)  
 `lol`: lolhuman API. (https://lolhuman.herokuapp.com/)  
-`Vhtear`: Vhtear API. (https://api.vhtear.com/)  
 
 
-## RUN BOT
-```bash
-> node index.js
+# INSTAL
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
+* [Libwebp](https://developers.google.com/speed/webp/download)
 ```
 
 Scan the QR code using your WhatsApp in your phone!
 
-Eror? Hub wa.me/6288286421519
+# PIMTUR
 
-# OPTIONAL
+| OWNER |✅|
+| ------------- | ------------- |
+| OFF |✅|
+| ON |✅|
+| STATUS |✅|
 
-|      OPTIONAL |
-| :-----------------: |
-| Rules BOT    |
-| Menu BOT    |
-| Verify |
+| STICKER |✅|
+| ------------- | ------------- |
+| STICKER |✅|
+| STICKER GIF |✅|
+| STICKER WM |✅|
+| TAKE STICKER |✅|
+| SEMONI |✅|
+| FDEFACE |✅|
 
+| CONVERT |✅|
+| ------------- | ------------- |
+| TOIMG |✅|
+| TOMP3 |✅|
+| TOMP4 |✅|
+| SLOW |✅|
+| FAST |✅|
+| REVERSE |✅|
+| TOURL |✅|
+| IMGTOURL |✅|
 
-# AVAILABLE FUNCTION
+| UP STORY |✅|
+| ------------- | ------------- |
+| UPSWTEXT |✅|
+| UPSWIMAGE |✅|
+| UPSWVIDEO  |✅|
 
-|          BOT     |  Availability  |
-| :--------------: | :------------: |
-| Verify         |       ✔️       |
-| Limit            |       ✔️       |
-| NSFW          |       ✔️       |
-| Antilink          |       ✔️       |
-| AntiSpam          |       ✔️       |
-| SimiSimi          |       ✔️       |
-| Banned           |       ✔️       |
-| Afk          |       ✔️       |
-
-# AVAILABLE FEATURES
-
-| Sticker Fiturs       | Availability |
-| :-----------------: | :----------: |
-| Sticker      |      ✔️      |
-| Stickernobg      |      ✔️      |
-| Sticker to Image    |      ✔️      |
-| GIF/Video to Sticker|      ✔️      |
-| Take Sticker        |      ✔️      |
-| Sticker GIF WM      |      ✔️      |
-| Telegram Sticker        |      ✔️      |
-| ATTP           |      ✔️      |
-| TTP           |      ✔️      |
-| TTP2           |      ✔️      |
-| Emoji Sticker           |      ✔️      |
-| Trigger           |      ✔️      |
-| Wasted           |      ✔️      |
-
-|      Downloader     | Availability |
-| :-----------------: | :----------: |
-| Instagram Downloader           |      ✔️      |
-| Twitter Downloader           |      ✔️      |
-| Facebook Downloader           |      ✔️      |
-| Play Video YT           |      ✔️      |
-| Play Audio YT           |      ✔️      |
-| TikTok Downloader           |      ✔️      |
-| Joox Downloader           |      ✔️      |
-| CocoFun Downloader           |      ✔️      |
-| MediaFire Downloader           |      ✔️      |
-| SoundCloud Downloader           |      ✔️      |
-| Pinterest Downloader           |      ✔️      |
-| Smule Downloader           |      ✔️      |
-| Wallpaper Downloader           |      ✔️      |
-| Nhentai Downloader          |      ✔️      |
-
-|       Music      | Availability |
-| :--------------: | :----------: |
-| Slow          |      ✔️      |
-| Bass          |      ✔️      |
-| Gemuk         |      ✔️      |
-| Tempo         |      ✔️      |
-| NightCore     |      ✔️      |
-| Apulsator      |      ✔️      |
-| Vibra         |      ✔️      |
-| Hode         |      ✔️      |
-| To MP3          |      ✔️      |
-
-|       Fun        | Availability |
-| :--------------: | :----------: |
-| SimSimi          |      ✔️      |
-| Jadian     |      ✔️      |
-| GantengCek        |      ✔️      |
-| DarkJokes         |      ✔️      |
-| Meme         |      ✔️      |
-| Hobby         |      ✔️      |
-| Quotes         |      ✔️      |
-| Alay        |      ✔️      |
-| Arti Nama        |      ✔️      |
-| Lirik         |      ✔️      |
-| Lesbi Cek         |      ✔️      |
-| Gay Cek         |      ✔️      |
-
-|       GAME        | Availability |
-| :--------------: | :----------: |
-| Truth         |      ✔️      |
-| Dare          |      ✔️      |
-| Tebak Gambar    |      ✔️      |
-| Cak Lontong       |      ✔️      |
-| Family100           |      ✔️      |
-| Tebak Bendera   |      ✔️      |
-| Tebak Gokil         |      ✔️      |
-| Tebak Kimia        |      ✔️      |
-| Cak Lontong        |      ✔️      |
+| FUN |✅|
+| ------------- | ------------- |
+| FITNAH |✅|
+| FITNAH PC |✅|
+| KONTAK |✅|
+| SUIT |✅|
+| SANTET |✅|
+| KUTUK |✅|
 
 
-|       Other        | Availability |
-| :--------------: | :----------: |
-| Asupan          |      ✔️      |
-| Translate          |      ✔️      |
-| Covid          |      ✔️      |
-| Cuaca          |      ✔️      |
-| Spam Call          |      ✔️      |
-| Spam SMS          |      ✔️      |
-| Readmore          |      ✔️      |
-| Fake CC          |      ✔️      |
-| Fake Identity    |      ✔️      |
+| TAG |✅|
+| ------------- | ------------- |
+| STICKTAG |✅|
+| HIDETAG |✅|
+| KONTAG |✅|
+| TOTAG |✅|
 
-|       Media        | Availability |
-| :--------------: | :----------: |
-| Brainly         |      ✔️      |
-| Wanted          |      ✔️      |
-| Shopee           |      ✔️      |
-| Playstore          |      ✔️      |
-| Harta Tahta          |      ✔️      |
-| Nulis          |      ✔️      |
-| Ph Comment          |      ✔️      |
-| 100+ Text Editor          |      ✔️      |
+| DOWNLOAD |✅|
+| ------------- | ------------- |
+| YTSEARCH |✅|
+| IGSTALK |✅|
+| PLAY |✅|
+| VIDEO |✅|
+| YTMP3 |✅|
+| YTMP4 |✅|
+| MEDIAFIRE |✅|
+| IGDL |✅|
+| FBDL |✅|
+| TIKTOKDL |✅|
+| TIKTOK AUDIO |✅|
+| TWITTER |✅|
+| BRAINLY |✅|
+| IMAGE |✅|
+| ANIME |✅|
 
-|       WEBZEONE        | Availability |
-| :--------------: | :----------: |
-| Jurnal Otakus          |      ✔️      |
-| Kuso Search          |      ✔️      |
-| LK21          |      ✔️      |
-| SSWEB          |      ✔️      |
-| Drakor          |      ✔️      |
-| XNXX          |      ✔️      |
-| Xhamster          |      ✔️      |
-| Find Source Anime          |      ✔️      |
-| Character          |      ✔️      |
-| Nekopoi Search          |      ✔️      |
+| MAKER |✅|
+| ------------- | ------------- |
+| NULIS |✅|
+| TAHTA |✅|
+| CARBON |✅|
+| KANNAGEN |✅|
+| TRUMPTWEET |✅|
+| MEMEGEN |✅|
+| QUOTEMAKER |✅|
 
+| OTHER |✅|
+| ------------- | ------------- |
+| SELF |✅|
+| PUBLIC |✅|
+| SET THUMB |✅|
+| SET FAKE IMG |✅|
+| SET TARGET |✅|
+| SET REPLY |✅|
+| PING |✅|
+| JOIN |✅|
+| GET |✅|
+| TERM |✅|
+| X |✅|
 
-|      Stalker       | Availability |
-| :----------------: | :----------: |
-| Github Profile     |      ✔️      |
-| Instagram Profile  |      ✔️      |
-| Twitter Profile    |      ✔️      |
-| TikTok Profile         |      ✔️      |
-| Youtube Profile         |      ✔️      |
-| ML Profile         |      ✔️      |
-
-|        Owner      | Availability |
-| :----------------: | :----------: |
-| Add Premium   |      ✔️      |
-| Give Limit   |      ✔️      |
-| LimitLess   |      ✔️      |
-| Unregister User  |      ✔️      |
-| Eval   |      ✔️      |
-| Get Session   |      ✔️      |
-| Mute BOT   |      ✔️      |
-
-|        Admin Group      | Availability |
-| :----------------: | :----------: |
-| Dell Message BOT   |      ✔️      |
-| Link Group   |      ✔️      |
-| Mute GC   |      ✔️      |
-| Owner GC   |      ✔️      |
-| ADD User   |      ✔️      |
-| Kick User   |      ✔️      |
-| Promote User   |      ✔️      |
-| Demote User   |      ✔️      |
-| Kick BOT   |      ✔️      |
-| NSFW Activating   |      ✔️      |
-| AntiLink Activating   |      ✔️      |
-
-|        BOT      | Availability |
-| :----------------: | :----------: |
-| Cek Status   |      ✔️      |
-| Cek Owner   |      ✔️      |
-| Cek PING   |      ✔️      |
-| Cek Status   |      ✔️      |
-
-## MORE? RAKIT SENDIRI
-
-# Thanks to
-* [`adiwajshing/Baileys`](https://github.com/adiwajshing/baileys)
-* [`Mhankbarbar`](https://github.com/MhankBarBar)
-* [`Arip`](https://github.com/Akkun3704)
+  # MAKASIH LORT
+* [`Baileys`](https://github.com/adiwajshing/Baileys)
+* [`MhankBarBar`](https://github.com/MhankBarBar)
+* [`HEXAGON`](https://github.com/Hexagonz)
+* [`MRHRTZ`](https://github.com/MRHRTZ)
+* [`ARIP`](https://github.com/Akkun3704)
