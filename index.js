@@ -66,7 +66,8 @@ const welkom = JSON.parse(fs.readFileSync('./lib/simi.json'))
 const afk = JSON.parse(fs.readFileSync('./lib/off.json'))
 const { sleep, isAfk, cekafk, addafk } = require('./lib/offline')
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
-const apiKey = 'UUBKOAGY'
+const apiKey = 'UUBKOAGY' //GET IN LEYCODERS
+const lolkey = 'LOLKEY' // GET IN https://lolhuman.herokuapp.com/
 hit_today = []
 offline = false
 owner = '6288286421519'
@@ -126,7 +127,43 @@ async function starts() {
 		global.batrei.push(batterylevel)
 		})
 //=================================================//
-
+hexa.on('group-participants-update', async (anu) => {
+		//if (!welkom.includes(anu.jid)) return
+		try {
+			mem = anu.participants[0]
+			console.log(anu)
+            try {
+            pp_user = await hexa.getProfilePicture(mem)
+            } catch (e) {
+            pp_user = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+            }
+            try {
+            pp_grup = await hexa.getProfilePicture(anu.jid)
+            } catch (e) {
+            pp_grup = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+            }
+            if (anu.action == 'add') {
+            mdata = await hexa.groupMetadata(anu.jid)
+            memeg = mdata.participants.length
+        	num = anu.participants[0]
+            anu_user = hexa.contacts[mem]
+            teks = `Halo Sayang @${num.split('@')[0]}\nWelcome in ${mdata.subject}\n\nSilahkan Intro ya sayang\nNama : \nUmur : \nGender : \nAsal : \n\nSemoga Betah dan Jangan Lupa isi`
+	        buff = await getBuffer(`https://api.lolhuman.xyz/api/base/welcome?apikey=${lolkey}&img1=${pp_user}&img2=${pp_grup}&background=https://i.ibb.co/7WK0hqB/a2c095d66e1b.jpg&username=${encodeURI(anu_user.notify)}&member=${memeg}&groupname= ${encodeURI(mdata.subject)}`)
+		hexa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+		}
+            if (anu.action == 'remove') {
+                mdata = await hexa.groupMetadata(anu.jid)
+            	num = anu.participants[0]
+                anu_user = hexa.contacts[mem]
+                memeg = mdata.participants.length
+                out = `Kenapa tuh? kok bisa keluar? \nSayonara @${num.split('@')[0]} we will miss you`
+                buff = await getBuffer(`https://api.lolhuman.xyz/api/base/leave?apikey=${lolkey}&img1=${pp_user}&img2=${pp_grup}&background=https://i.ibb.co/7WK0hqB/a2c095d66e1b.jpg&username=${encodeURI(anu_user.notify)}&member=${memeg}&groupname= ${encodeURI(mdata.subject)}`)
+                hexa.sendMessage(mdata.id, buff, MessageType.image, {caption: out, contextInfo: {"mentionedJid": [num]}})
+            }
+		} catch (e) {
+			console.log('Error : %s', color(e, 'red'))
+		}
+	})
 hexa.on('chat-update', async (mek) => {
 	try {
     if (!mek.hasNewMessage) return
