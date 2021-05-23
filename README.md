@@ -36,7 +36,7 @@
 # INSTALLATION
 ```bash
 > pkg install nodejs && pkg install git
-> git clone https://github.com/Hexagonz/SELF-HX
+> git clone https://github.com/Nino-chan02/SELF-HX
 > cd SELF-HX
 > bash install.sh
 > npm start/node main.js
